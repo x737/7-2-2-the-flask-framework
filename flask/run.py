@@ -23,3 +23,9 @@ if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
             debug=True)
+
+"""
+it's important to note that we should never have debug=true in a production application or when we submit our 
+projects for assessment. This is very important because having debug equals true can allow arbitrary code to be run, 
+and so obviously this is a security flaw. It's only any good for when we're testing our applications.
+"""

@@ -20,3 +20,10 @@ see run.py
 3. use template logic by using **Jinja templating language**. href = "{{url_for('index')}}"
 4. calling this url_for() function that looks up the view called index or the view called about(), and then injects some text, which is the actual root.
 5. 'url_for()' method basically works like shorthand in order to dynamically build urls
+
+## Template inheritance
+
+1. Template Inheritance Allows us to inherit code from other templates By creating a base template and using {% extends 'base.html' %} in a child template
+2. {% block content %}
+    <h1>About</h1>
+    {% endblock %}

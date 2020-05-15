@@ -16,4 +16,7 @@ see run.py
 ## Routing
 
 1. allow us to swich between views using URLs by creating routes
-2. 
+2. add same routes in href = "" in links in html and to @app.route("/")
+3. use template logic by using **Jinja templating language**. href = "{{url_for('index')}}"
+4. calling this url_for() function that looks up the view called index or the view called about(), and then injects some text, which is the actual root.
+5. 'url_for()' method basically works like shorthand in order to dynamically build urls

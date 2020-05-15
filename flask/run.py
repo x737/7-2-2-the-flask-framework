@@ -16,8 +16,8 @@ a decorator is a way of wrapping functions.
 # "/" indicate the root directory 
 # when we try to browse to the root directory as indicated by the "/", then flask triggers the index function underneath and returns the "Hello, World"
 @app.route("/")
-def index()：
-    return "Hello, World"
+def hello():
+    return "Hello World"
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
